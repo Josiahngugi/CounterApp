@@ -16,7 +16,10 @@ export default function App() {
   }
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{ backgroundColor: count > 0 ? "green" : "red" }}
+    >
       <h1>{count}</h1>
       <button onClick={addCount}>Increment</button>
       <button onClick={minusCount}>Decrement</button>
